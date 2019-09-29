@@ -13,7 +13,10 @@ const router = new Router({
     {
       path: '/',
       name: 'home',
-      component: indexPage
+          component: indexPage,
+          meta: {
+              title: '巨乘佛教 ——首页'
+          }
     },
     {
       path: '/缘起',

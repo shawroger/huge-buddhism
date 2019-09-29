@@ -10,7 +10,7 @@
     </li>
     
     <center>
-        <div v-show="show_book">
+        <div>
         <el-divider></el-divider>
         <el-input
         
@@ -48,6 +48,7 @@ const page = {
             my.get('docs/classic.csv');
             my.then = () => {
                 this.docs = my.JSON;
+                console.log(my)
             }
 
         },
